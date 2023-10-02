@@ -2,22 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
 <body>
-<div id="pre-game" class="is-active">
+<div id="pre-game-text" class="is-active">
+    <div class="pre-game-quiz">
+        <h1>Javacado Quiz</h1>
+        <p>Legends has it that no one was able to successful pass the Javacado Quiz in the last one hundred years. Javacado has been passed down from families to families to find the chosen one who knows the answers to all these questions. Beware! You will lose 10 seconds of your life everytime you answer incorrectly. Click start button to begin Javacado Quiz.</p>
+        <button id="start-quiz" class="start-button">Start Javacado Quiz</button>
+    </div>
+</div>
+<div id="pre-game" class="is-active" class="center-text">
     <button id="hi">View High Scores</button>
 </div>
-<div id="game" class="is-inactive">
-    GAME
+<div id="game" class="is-inactive" class="timer">
+    <div>
+        <div id="Timer"></div>
+        <div class="quiz-text"> <span></span> </div>
+        <div id="quiz-button">
+            <div>
+                <button class="choice-text"><span></span></button>
+            </div>
+
+            <div>
+                <button class="choice-text"><span></span></button>
+            </div>
+
+            <div>
+                <button class="choice-text"><span></span></button>
+            </div>
+
+            <div>
+                <button class="choice-text"><span></span></button>
+            </div>
+            
+            <button id="end-quiz"> End Quiz </button>
+            
+        </div>
+    </div>
 </div>
 <div id="game-end" class="is-inactive">
     NOT GAME
 </div>
 <div id="hi-score" class="is-inactive">
-    HI-SCORE
+    <div>
+    <h2>HI-SCORE</h2>
     <button id="back">Go back</button>
+    </div>
 </div>
 
 <script src="./assets/script.js"></script>
